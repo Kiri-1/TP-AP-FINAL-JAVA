@@ -4,18 +4,14 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Ronda ronda1 =  new Ronda();
+        //lectura del archivo resultados csv
         FileReader lecturaRes = new FileReader("C:\\Users\\crist\\OneDrive\\Documentos\\AP Java 2023\\TP AP FINAL JAVA\\TP AP\\resultados.csv");
         BufferedReader br = new BufferedReader(lecturaRes);
 
-//lee la linea del archivo,csv
         String linea = "";
         while ((linea = br.readLine()) != null) {
             System.out.println(linea);
-
-
         }
-
 
     }
 
