@@ -45,7 +45,7 @@ public class Partido {
         this.golesEquipo2 = golesEquipo2;
     }
 
-    //Metodo resultados
+    //Metodo resultados de un partido
     public ResultadoEnum resultado(Equipo equipo) {
         if (this.equipo1 == equipo) {
             if (this.golesEquipo1 > this.golesEquipo2) {

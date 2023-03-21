@@ -1,5 +1,4 @@
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -8,7 +7,8 @@ public class Main {
         Ronda ronda1 =  new Ronda();
         FileReader lecturaRes = new FileReader("C:\\Users\\crist\\OneDrive\\Documentos\\AP Java 2023\\TP AP FINAL JAVA\\TP AP\\resultados.csv");
         BufferedReader br = new BufferedReader(lecturaRes);
-//procesar la línea
+
+//lee la linea del archivo,csv
         String linea = "";
         while ((linea = br.readLine()) != null) {
             System.out.println(linea);
