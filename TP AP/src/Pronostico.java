@@ -2,7 +2,7 @@ public class Pronostico {
     private Partido partido;
     private Equipo equipo;
     private ResultadoEnum resultadoPro;
-//constructor
+
     public Pronostico(Partido partido, Equipo equipo, ResultadoEnum resultadoPro) {
         this.partido = partido;
         this.equipo = equipo;
@@ -32,10 +32,19 @@ public class Pronostico {
     public String toString() {
         return "Pronostico [partido=" + partido + ", equipo=" + equipo + ", resultadoPro=" + resultadoPro + "]";
     }
-//otorgando puntos de los resultado de un partido
-    public int selecPuntajes() {
+//Otorgando puntos de los resultado de un partido
+    public int otorgarPuntos( String pronosico) {
         int puntos = 0;
-        //Partido Equipo ResultadoEnum
+
+        if(partido.resultado(equipo)== pronosico){
+            puntos=1;
+        }
+        if(partido.resultado(equipo)== ){
+            puntos=1;
+        }
+        if(partido.resultado(equipo)== ){
+            puntos=1;
+        }
         return puntos;
     }
 

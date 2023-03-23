@@ -47,19 +47,25 @@ public class Partido {
 
     //Metodo resultados de un partido
     public ResultadoEnum resultado(Equipo equipo) {
+        String resultado="";
         if (this.equipo1 == equipo) {
             if (this.golesEquipo1 > this.golesEquipo2) {
+                resultado="GANADOR1";
                 return ResultadoEnum.GANADOR;
             } else {
+                resultado="PERDEDOR1";
                 return ResultadoEnum.PERDEDOR;
             }
         } else if (this.equipo2 == equipo) {
             if (this.golesEquipo1 < this.golesEquipo2) {
+                resultado="GANADOR2";
                 return ResultadoEnum.GANADOR;
             } else {
+                resultado="PERDEDOR2";
                 return ResultadoEnum.PERDEDOR;
             }
         }
+        resultado="EMPATE";
         return ResultadoEnum.EMPATE;
     }
 }
